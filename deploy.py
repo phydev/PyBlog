@@ -1,6 +1,6 @@
 import os
 
-def generateIndex(folder, output, extensions = ['html']):
+def generateIndex(folder, output, extensions = ['html'], relative_path=FALSE):
     """
     this function is responsible for reading the posts stored in `folder` 
     and generating an html file with a content table based on the metadata
@@ -22,7 +22,13 @@ def generateIndex(folder, output, extensions = ['html']):
     patterns = {}
     article_number = 0
     for n, article in enumerate(articles):
-        link="/"+folder+"/"+article
+        
+        if relative_path:
+            link=folder+"/"+article
+        else:
+            # the path is written relatively to the root directory
+            link="/"+folder+"/"+article
+            
         with open("."+link) as file:
             line = file.readline() # read metadata from the first line
             metadata[n] = dict(eval(line[4:-4])) # remove html comment tags
@@ -38,5 +44,7 @@ def generateIndex(folder, output, extensions = ['html']):
             file.write(patterns[str(line)])
 
 # you can call this function several times and generate different lists for your site
-generateIndex(folder="posts", output="posts.html") # comment this line
+generateIndex(folder="posts", output="posts.html", relative_path=TRUE) # if you use this in a subsite, use this line
+#generateIndex(folder="posts", output="posts.html") # for your main github website, use this line and comment the above
+
 
