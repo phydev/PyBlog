@@ -1,4 +1,5 @@
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://phydev.github.io/PyBlog)
+[![Python 3](https://pyup.io/repos/github/ocbe-uio/trajpy/python-3-shield.svg)](https://pyup.io/repos/github/ocbe-uio/trajpy/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # PyBlog
