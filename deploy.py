@@ -28,8 +28,10 @@ def generateIndex(folder, output, extensions = ['html'], relative_path=False):
         else:
             # the path is written relatively to the root directory
             link="/"+folder+"/"+article
-            
-        with open("."+link) as file:
+
+        path = "./"+folder+"/"+article   
+        
+        with open(path) as file:
             line = file.readline() # read metadata from the first line
             metadata[n] = dict(eval(line[4:-4])) # remove html comment tags
 
@@ -44,7 +46,7 @@ def generateIndex(folder, output, extensions = ['html'], relative_path=False):
             file.write(patterns[str(line)])
 
 # you can call this function several times and generate different lists for your site
-generateIndex(folder="posts", output="posts.html", relative_path=True) # if you use this in a subsite, use this line
+generateIndex(folder="posts", output="posts.html", relative_path=True) # if you've a subsite, use this line
 #generateIndex(folder="posts", output="posts.html") # for your main github website, use this line and comment the above
 
 
