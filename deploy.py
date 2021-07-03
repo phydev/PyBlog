@@ -38,4 +38,7 @@ def generateIndex(folder, output, extensions = ['html']):
             file.write(patterns[str(line)])
 
 # you can call this function several times and generate different lists for your site
-generateIndex(folder="posts", output="posts.html")
+# since this is a subsite of my github website I'll need to add the path `PyBlog/posts`
+# but for your main website, use only `posts`
+generateIndex(folder="PyBlog/posts", output="posts.html") # comment this line
+# generateIndex(folder="PyBlog/posts", output="posts.html") # uncomment this line 
