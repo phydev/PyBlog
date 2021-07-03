@@ -1,6 +1,6 @@
 import os
 
-def generateIndex(folder, output, extensions = ['html'], relative_path=FALSE):
+def generateIndex(folder, output, extensions = ['html'], relative_path=False):
     """
     this function is responsible for reading the posts stored in `folder` 
     and generating an html file with a content table based on the metadata
@@ -44,7 +44,7 @@ def generateIndex(folder, output, extensions = ['html'], relative_path=FALSE):
             file.write(patterns[str(line)])
 
 # you can call this function several times and generate different lists for your site
-generateIndex(folder="posts", output="posts.html", relative_path=TRUE) # if you use this in a subsite, use this line
+generateIndex(folder="posts", output="posts.html", relative_path=True) # if you use this in a subsite, use this line
 #generateIndex(folder="posts", output="posts.html") # for your main github website, use this line and comment the above
 
 
