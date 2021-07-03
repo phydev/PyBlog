@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+
+   <main id="main">
+
+   The posts listed in the posts.html file will be shown bellow:
+
+    <h2> // Posts </h2>
+       <div id="posts-placeholder"></div>
+
+     <script>
+    $(function(){
+        $("#posts-placeholder").load("posts.html");
+      });
+    </script>
+
+
+</body>
+</html>
