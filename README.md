@@ -13,6 +13,13 @@ Minimal serverless blog system powered by python and GitHub Actions.
 | [index.html](https://github.com/phydev/PyBlog/blob/main/index.html) | website main page - we will import posts.html here |
 |  [main.yml](https://github.com/phydev/PyBlog/blob/main/.github/workflows/main.yml) | This is the workflow ran by Actions  |
 
+# Why?
+
+I was looking for solutions that would allow me to have a list of posts generated automatically immediately after pushing new articles into my website repository. The challenge is to have such a system while you keep your website serverless with static html only.
+
+The most well established method is [Jekyll](https://github.com/jekyll/jekyll), a static site generator that is the engine behind [GitHub Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll). This method is great if you're not looking to personalise your website too much - just select an available theme and use as it is. My problem with this method is that I found personalisation quite difficult and the configuration system is not very intuitive to navigate. I wanted to have just a simple professional website, but the available themes would not fit my purpose. 
+
+So I understood the mechanisms behind Jekyll and decide to build something similar, but simpler and that would give me total control of my website. This is how PyBlog was born.
 
 # How to use?
 
