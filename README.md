@@ -14,7 +14,7 @@ Minimal serverless blog system powered by python and GitHub Actions.
 |  [main.yml](https://github.com/phydev/PyBlog/blob/main/.github/workflows/main.yml) | This is the workflow ran by Actions  |
 
 
-# How to use
+# How to use?
 
 Clone this repository into your machine:
 
@@ -57,3 +57,6 @@ If you've a website copy [deploy.py](https://github.com/phydev/PyBlog/blob/main/
 That's all!
 
 
+## How it works?
+
+![PyBlog flowchart](https://github.com/phydev/PyBlog/blob/da104dde78f026e15d51a288346320026e34d0e6/docs/PyBlog.png)
