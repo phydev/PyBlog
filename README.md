@@ -13,7 +13,7 @@ Minimal serverless blog system powered by python and GitHub Actions.
 | [index.html](https://github.com/phydev/PyBlog/blob/main/index.html) | website main page - we will import posts.html here |
 |  [main.yml](https://github.com/phydev/PyBlog/blob/main/.github/workflows/main.yml) | This is the workflow ran by Actions  |
 
-# Why?
+## Why?
 
 I was looking for solutions that would allow me to have a list of posts generated automatically immediately after pushing new articles into my website repository. The challenge is to have such a system while you keep your website serverless with static html only.
 
@@ -21,7 +21,7 @@ The most well established method is [Jekyll](https://github.com/jekyll/jekyll), 
 
 So I understood the mechanisms behind Jekyll and decide to build something similar, but simpler and that would give me total control of my website. This is how PyBlog was born.
 
-# How to use?
+## How to use?
 
 Clone this repository into your machine:
 
@@ -73,4 +73,9 @@ The system is devided in two main components represented in the flowcharts bello
 The second part is just static html. We use a jQuery function to load the posts list into the `index.html`. 
 
 ![PyBlog flowchart - part 2](https://github.com/phydev/PyBlog/blob/700c28a352072e341ca8e047e8a196da23681a0e/docs/PyBlog_jQuery.png) 
+
+
+## Improvements
+- Organize posts by date instead of providing explicit order
+- Add keywords in the metadata and implement a word cloud solution
 
