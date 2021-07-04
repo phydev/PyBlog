@@ -59,4 +59,6 @@ That's all!
 
 ## How it works?
 
-![PyBlog flowchart](https://github.com/phydev/PyBlog/blob/da104dde78f026e15d51a288346320026e34d0e6/docs/PyBlog.png)
+![PyBlog flowchart](https://github.com/phydev/PyBlog/blob/700c28a352072e341ca8e047e8a196da23681a0e/docs/PyBlog.png)
+![PyBlog flowchart - part 2](https://github.com/phydev/PyBlog/blob/700c28a352072e341ca8e047e8a196da23681a0e/docs/PyBlog_jQuery.png) 
+
