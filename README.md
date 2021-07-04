@@ -59,6 +59,11 @@ That's all!
 
 ## How it works?
 
+The system is devided in two main components represented in the flowcharts bellow. The first component is the executation of the `deploy.py` via GitHub Actions to read the articles that are stored in the subdirectory `/posts/`. The python script will generate a new file called `posts.html` which contains only a list of links for your posts. Then we use git add/commit/push to keep this new file into the repository. 
+
 ![PyBlog flowchart](https://github.com/phydev/PyBlog/blob/700c28a352072e341ca8e047e8a196da23681a0e/docs/PyBlog.png)
+
+The second part is just static html. We use a jQuery function to load the posts list into the `index.html`. 
+
 ![PyBlog flowchart - part 2](https://github.com/phydev/PyBlog/blob/700c28a352072e341ca8e047e8a196da23681a0e/docs/PyBlog_jQuery.png) 
 
