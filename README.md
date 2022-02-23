@@ -23,7 +23,7 @@ So I understood the mechanisms behind Jekyll and decide to build something simil
 
 - Advantages
   - Easy to configure
-  - Personalisation is simple
+  - Customizing is simple
   - It's free and the method can be adapted for creating more complex systems
 - Weak points
   - At this point it's too simple, if you need something more you'll need to code yourself
